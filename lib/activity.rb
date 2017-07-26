@@ -6,13 +6,12 @@ class Activity
     @participants = {}
   end
 
-  def add_participant
-
-      participants << [key, value)
+  def add_participant(person, amount)
+    @participants[person] = amount
   end
 
   def total_cost
-    add_participant(key, value)[:value]
+    add_participant[:value]
   end
 
 end
